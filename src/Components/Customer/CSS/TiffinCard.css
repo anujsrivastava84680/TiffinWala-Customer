@@ -1,0 +1,373 @@
+
+/* ==================================
+   TIFFIN CARD
+================================== */
+
+.tiffin-card {
+  width: 100%;
+  min-width: 0;
+  background: #ffffff;
+  border: 1px solid #eee9df;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(23, 77, 60, 0.06);
+  box-sizing: border-box;
+}
+
+.tiffin-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(23, 77, 60, 0.13);
+}
+
+.tiffin-card:focus-visible {
+  outline: 3px solid #F4A340;
+  outline-offset: 3px;
+}
+
+/* ==================================
+   TIFFIN IMAGE
+================================== */
+
+.tiffin-image-container {
+  width: 100%;
+  height: 210px;
+  position: relative;
+  overflow: hidden;
+  background: #E7F3EB;
+}
+
+.tiffin-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.tiffin-card:hover .tiffin-image {
+  transform: scale(1.08);
+}
+
+/* ==================================
+   BADGES
+================================== */
+
+.tiffin-popular-badge,
+.tiffin-discount-badge {
+  position: absolute;
+  top: 13px;
+  padding: 7px 11px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.tiffin-popular-badge {
+  left: 12px;
+  background: #FFF9F0;
+  color: #174D3C;
+}
+
+.tiffin-discount-badge {
+  right: 12px;
+  background: #E99532;
+  color: #fff;
+}
+
+/* ==================================
+   WISHLIST BUTTON
+================================== */
+
+.tiffin-wishlist-btn {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 37px;
+  height: 37px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  color: #174D3C;
+  font-size: 23px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tiffin-wishlist-btn:hover {
+  background: #174D3C;
+  color: #fff;
+}
+
+/* ==================================
+   TIFFIN DETAILS
+================================== */
+
+.tiffin-details {
+  padding: 18px;
+}
+
+.tiffin-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.tiffin-title-row h3 {
+  color: #174D3C;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.tiffin-rating {
+  flex-shrink: 0;
+  background: #E7F3EB;
+  color: #174D3C;
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.tiffin-description {
+  color: #858B85;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 10px 0 13px;
+}
+
+/* ==================================
+   PROVIDER
+================================== */
+
+.tiffin-provider {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  color: #647067;
+  font-size: 12px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #eee9df;
+}
+
+.provider-verified {
+  color: #2E8B57;
+  font-size: 11px;
+  font-weight: 700;
+  margin-left: auto;
+}
+
+/* ==================================
+   TIFFIN INFO
+================================== */
+
+.tiffin-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 13px 0;
+}
+
+.tiffin-info span {
+  color: #777F78;
+  font-size: 11px;
+}
+
+/* ==================================
+   PRICE AND CART
+================================== */
+
+.tiffin-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 13px;
+  border-top: 1px solid #eee9df;
+}
+
+.tiffin-price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tiffin-price strong {
+  color: #174D3C;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.tiffin-price del {
+  color: #999;
+  font-size: 12px;
+}
+
+.tiffin-add-btn {
+  border: none;
+  background: #174D3C;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tiffin-add-btn:hover {
+  background: #2E8B57;
+  transform: translateY(-2px);
+}
+
+/* ==================================
+   LAPTOP RESPONSIVE
+================================== */
+
+@media (max-width: 1100px) {
+  .tiffin-image-container {
+    height: 190px;
+  }
+
+  .tiffin-details {
+    padding: 15px;
+  }
+
+  .tiffin-title-row h3 {
+    font-size: 16px;
+  }
+}
+
+/* ==================================
+   TABLET RESPONSIVE
+================================== */
+
+@media (max-width: 768px) {
+  .tiffin-image-container {
+    height: 180px;
+  }
+
+  .tiffin-details {
+    padding: 14px;
+  }
+
+  .tiffin-price strong {
+    font-size: 19px;
+  }
+
+  .tiffin-add-btn {
+    padding: 9px 15px;
+  }
+}
+
+/* ==================================
+   MOBILE RESPONSIVE
+================================== */
+
+@media (max-width: 576px) {
+  .tiffin-card {
+    border-radius: 13px;
+  }
+
+  .tiffin-image-container {
+    height: 155px;
+  }
+
+  .tiffin-details {
+    padding: 12px;
+  }
+
+  .tiffin-title-row {
+    flex-wrap: wrap;
+  }
+
+  .tiffin-title-row h3 {
+    font-size: 14px;
+  }
+
+  .tiffin-rating {
+    font-size: 10px;
+    padding: 4px 6px;
+  }
+
+  .tiffin-description {
+    font-size: 11px;
+    margin: 8px 0 10px;
+  }
+
+  .tiffin-provider {
+    font-size: 10px;
+    gap: 5px;
+  }
+
+  .provider-verified {
+    font-size: 9px;
+  }
+
+  .tiffin-info {
+    gap: 6px;
+    margin: 10px 0;
+  }
+
+  .tiffin-info span {
+    font-size: 10px;
+  }
+
+  .tiffin-price strong {
+    font-size: 17px;
+  }
+
+  .tiffin-price del {
+    font-size: 10px;
+  }
+
+  .tiffin-add-btn {
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+
+  .tiffin-popular-badge,
+  .tiffin-discount-badge {
+    font-size: 9px;
+    padding: 6px 8px;
+  }
+}
+
+/* ==================================
+   SMALL MOBILE
+================================== */
+
+@media (max-width: 380px) {
+  .tiffin-image-container {
+    height: 130px;
+  }
+
+  .tiffin-details {
+    padding: 10px;
+  }
+
+  .tiffin-title-row h3 {
+    font-size: 12px;
+  }
+
+  .tiffin-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tiffin-price strong {
+    font-size: 15px;
+  }
+
+  .tiffin-add-btn {
+    padding: 7px 9px;
+  }
+}

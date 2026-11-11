@@ -1,0 +1,316 @@
+/* Main Page */
+.explore-page {
+  background: #FFF9F0;
+  min-height: 100vh;
+  padding-bottom: 70px;
+}
+
+/* Page Heading */
+.explore-heading {
+  text-align: center;
+  padding: 65px 20px 30px;
+}
+
+.explore-heading span {
+  color: #2E8B57;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.explore-heading h1 {
+  color: #174D3C;
+  font-size: 40px;
+  margin: 12px 0;
+}
+
+.explore-heading p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Search */
+.explore-search {
+  max-width: 650px;
+  margin: 10px auto 35px;
+  padding: 0 20px;
+}
+
+.explore-search-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.explore-search-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Main Content */
+.explore-content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 25px;
+}
+
+/* Categories */
+.explore-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 45px;
+}
+
+.explore-categories button {
+  border: 1px solid #d9e5dc;
+  background: #fff;
+  color: #174D3C;
+  padding: 11px 22px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.explore-categories button:hover,
+.explore-categories button.active {
+  background: #174D3C;
+  color: #fff;
+  border-color: #174D3C;
+}
+
+/* Result Heading */
+.explore-result-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.explore-result-heading h2 {
+  color: #174D3C;
+  font-size: 25px;
+}
+
+.explore-result-heading p {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Tiffin Grid */
+.explore-tiffin-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Tiffin Card */
+.explore-tiffin-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.07);
+  transition: 0.3s;
+}
+
+.explore-tiffin-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.explore-tiffin-image {
+  position: relative;
+  height: 220px;
+}
+
+.explore-tiffin-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.explore-rating {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: #fff;
+  padding: 7px 11px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* Card Information */
+.explore-tiffin-info {
+  padding: 20px;
+}
+
+.explore-category-name {
+  display: inline-block;
+  color: #2E8B57;
+  background: #eaf5ed;
+  padding: 5px 11px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.explore-tiffin-info h3 {
+  color: #174D3C;
+  font-size: 19px;
+  margin: 12px 0 8px;
+}
+
+.explore-chef-name {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.explore-description {
+  color: #777;
+  font-size: 13px;
+  line-height: 1.6;
+  min-height: 42px;
+}
+
+.explore-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+  margin-top: 15px;
+}
+
+.explore-card-bottom h3 {
+  color: #174D3C;
+  font-size: 22px;
+  margin: 0;
+}
+
+.explore-card-bottom small {
+  color: #888;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.explore-card-bottom button {
+  background: #F4A340;
+  color: #174D3C;
+  border: none;
+  padding: 11px 15px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.explore-card-bottom button:hover {
+  background: #174D3C;
+  color: #fff;
+}
+
+/* No Result */
+.explore-no-result {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  color: #777;
+}
+
+.explore-no-result h3 {
+  color: #174D3C;
+  margin-bottom: 10px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .explore-tiffin-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .explore-heading {
+    padding-top: 45px;
+  }
+
+  .explore-heading h1 {
+    font-size: 29px;
+  }
+
+  .explore-heading p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .explore-tiffin-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .explore-categories {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .explore-categories button {
+    padding: 9px 15px;
+    font-size: 12px;
+  }
+
+  .explore-result-heading h2 {
+    font-size: 20px;
+  }
+
+  .explore-result-heading p {
+    font-size: 12px;
+  }
+}
+
+/* Wishlist Heart Button */
+.explore-tiffin-image {
+  position: relative;
+}
+
+.explore-wishlist-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.explore-wishlist-btn:hover {
+  transform: scale(1.1);
+  color: #e63946;
+}
+
+.explore-wishlist-btn.wishlisted {
+  color: #e63946;
+  background: #fff0f1;
+}

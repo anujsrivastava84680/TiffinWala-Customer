@@ -1,0 +1,159 @@
+
+.subscription-checkout-page {
+  background: #f8f8f6;
+  min-height: 70vh;
+  padding: 55px 7%;
+  color: #174d3d;
+}
+
+.subscription-checkout-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.subscription-checkout-heading button {
+  display: block;
+  border: none;
+  background: none;
+  color: #174d3d;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.subscription-checkout-heading h1 {
+  font-size: 35px;
+}
+
+.subscription-checkout-heading p {
+  color: #888;
+}
+
+.subscription-checkout-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+  align-items: start;
+}
+
+.subscription-checkout-form,
+.subscription-order-summary {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.04);
+}
+
+.subscription-checkout-form h2,
+.subscription-order-summary h2 {
+  margin: 0 0 22px;
+  font-size: 22px;
+}
+
+.subscription-checkout-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 17px 0 8px;
+}
+
+.subscription-checkout-form input:not([type="radio"]),
+.subscription-checkout-form textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  outline-color: #e99330;
+  font: inherit;
+}
+
+.subscription-checkout-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.subscription-payment-option {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400 !important;
+}
+
+.subscription-checkout-form > button,
+.subscription-success button,
+.subscription-checkout-empty button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  background: #174d3d;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.subscription-order-summary h3 {
+  color: #e99330;
+  font-size: 24px;
+}
+
+.subscription-order-summary p {
+  color: #777;
+  margin: 15px 0;
+}
+
+.subscription-order-summary strong {
+  color: #174d3d;
+  font-size: 23px;
+}
+
+.subscription-order-summary > div {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.subscription-order-summary small {
+  display: block;
+  color: #999;
+  margin-top: 20px;
+}
+
+.subscription-success,
+.subscription-checkout-empty {
+  max-width: 550px;
+  margin: 50px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.subscription-success > svg {
+  font-size: 60px;
+  color: #16865a;
+}
+
+.subscription-success p {
+  color: #888;
+}
+
+.subscription-success .subscription-back-btn {
+  background: #e99330;
+}
+
+@media (max-width: 750px) {
+  .subscription-checkout-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .subscription-checkout-page {
+    padding: 35px 5%;
+  }
+
+  .subscription-checkout-heading h1 {
+    font-size: 27px;
+  }
+}
